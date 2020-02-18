@@ -1,37 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Articles • Hrvoje Šimić</title>
-    <description>A collection of long form articles by Hrvoje Šimić</description>		
-    <link>http://shime.sh</link>
-    <atom:link href="http://shime.sh/feed.xml" rel="self" type="application/rss+xml" />
+    <title></title>
+    <description></description>		
+    <link>http://deepdive.sh</link>
+    <atom:link href="http://deepdive.sh/feed.xml" rel="self" type="application/rss+xml" />
 
-    
-    <item>
-      <title>Achieving balance between reading and writing</title>
-      
-      <description>&lt;blockquote&gt;
-&lt;p&gt;Reading feeds the mind and replenishes it when it is worn from studying — even though it is not without work itself. We should not restrict ourselves to writing or to reading: endless writing saps our strength and then exhausts it. Too much reading can puff up or dilute our ability. Most commendable is to take them in their turn, to mix one with the other, so that the seeds of one’s reading may be grown anew with the pen.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-      
-      <pubDate>Mon, 10 Feb 2020 00:00:00 +0100</pubDate>
-      <link>http://shime.sh/achieving-balance-between-reading-and-writing</link>
-      <guid isPermaLink="true">http://shime.sh/achieving-balance-between-reading-and-writing</guid>
-    </item>
-    
-    <item>
-      <title>Fighting content overload</title>
-      
-      <description>&lt;blockquote&gt;
-&lt;p&gt;The abundance of books is a distraction.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-      
-      <pubDate>Sun, 05 Jan 2020 00:00:00 +0100</pubDate>
-      <link>http://shime.sh/fighting-content-overload</link>
-      <guid isPermaLink="true">http://shime.sh/fighting-content-overload</guid>
-    </item>
     
     <item>
       <title>Deep dive into Did You Mean</title>
@@ -42,8 +16,8 @@ a handy gem for detecting typos.&lt;/p&gt;
 </description>
       
       <pubDate>Sat, 28 Dec 2019 00:00:00 +0100</pubDate>
-      <link>http://shime.sh/deep-dive-into-did-you-mean</link>
-      <guid isPermaLink="true">http://shime.sh/deep-dive-into-did-you-mean</guid>
+      <link>http://deepdive.sh/deep-dive-into-did-you-mean</link>
+      <guid isPermaLink="true">http://deepdive.sh/deep-dive-into-did-you-mean</guid>
     </item>
     
     <item>
@@ -53,93 +27,8 @@ a handy gem for detecting typos.&lt;/p&gt;
 </description>
       
       <pubDate>Sun, 23 Jun 2019 00:00:00 +0200</pubDate>
-      <link>http://shime.sh/deep-dive-into-minitest</link>
-      <guid isPermaLink="true">http://shime.sh/deep-dive-into-minitest</guid>
-    </item>
-    
-    <item>
-      <title>Replacing Google Fonts with system fonts</title>
-      
-      <description>&lt;p&gt;Redesigning this website was a fun little project I did over the past
-weekend.
-The most exciting part was removing the need for Google Fonts and
-replacing them with system fonts.
-Google Fonts was the last Google&amp;#39;s tentacle on this website,
-so it&amp;#39;s now 100% Google free!&lt;/p&gt;
-</description>
-      
-      <pubDate>Mon, 08 Apr 2019 00:00:00 +0200</pubDate>
-      <link>http://shime.sh/replacing-google-fonts-with-system-fonts</link>
-      <guid isPermaLink="true">http://shime.sh/replacing-google-fonts-with-system-fonts</guid>
-    </item>
-    
-    <item>
-      <title>Testing Stimulus</title>
-      
-      <description>&lt;p&gt;Since the &lt;a href=&quot;https://stimulusjs.org/handbook/origin&quot;&gt;official Stimulus handbook&lt;/a&gt;
-doesn&amp;#39;t include testing, and I recently had to cover a Stimulus controller with tests,
-I&amp;#39;d like to share my approach.&lt;/p&gt;
-</description>
-      
-      <pubDate>Sat, 19 Jan 2019 00:00:00 +0100</pubDate>
-      <link>http://shime.sh/testing-stimulus</link>
-      <guid isPermaLink="true">http://shime.sh/testing-stimulus</guid>
-    </item>
-    
-    <item>
-      <title>A short guide for wasting hundreds of hours on your idea</title>
-      
-      <description>&lt;p&gt;I&amp;#39;ve killed two products I&amp;#39;ve spent a considerable amount of time
-building. I&amp;#39;ve wasted hundreds of hours
-this way. The clichéd &amp;quot;at least I&amp;#39;ve learned something&amp;quot; is my only consolation.&lt;/p&gt;
-</description>
-      
-      <pubDate>Sat, 14 Jul 2018 00:00:00 +0200</pubDate>
-      <link>http://shime.sh/how-to-waste-time-on-your-idea</link>
-      <guid isPermaLink="true">http://shime.sh/how-to-waste-time-on-your-idea</guid>
-    </item>
-    
-    <item>
-      <title>Quality vs popularity</title>
-      
-      <description>&lt;p&gt;When validating library quality, we like to 
-take a look at some metrics like
-the time of the last commit or the number of
-stars as if those relate to quality.
-It&amp;#39;s the easiest thing to do, instead of
-validating the quality by other means,
-we go with the easiest approach
-of following everybody else.&lt;/p&gt;
-</description>
-      
-      <pubDate>Wed, 21 Mar 2018 00:00:00 +0100</pubDate>
-      <link>http://shime.sh/quality-vs-popularity</link>
-      <guid isPermaLink="true">http://shime.sh/quality-vs-popularity</guid>
-    </item>
-    
-    <item>
-      <title>Git commit message syntax highlighting in Vim</title>
-      
-      <description>&lt;p&gt;Although you could use &lt;code&gt;git commit -m&lt;/code&gt; for writing
-a git commit message, it&amp;#39;s much better to use
-a proper editor for that, especially if you&amp;#39;re
-writing a multiline commit message.&lt;/p&gt;
-</description>
-      
-      <pubDate>Tue, 20 Mar 2018 00:00:00 +0100</pubDate>
-      <link>http://shime.sh/git-commit-message-syntax-highlighting-in-vim</link>
-      <guid isPermaLink="true">http://shime.sh/git-commit-message-syntax-highlighting-in-vim</guid>
-    </item>
-    
-    <item>
-      <title>Loving Vim</title>
-      
-      <description>&lt;p&gt;&lt;em&gt;This post is inspired by &lt;a href=&quot;https://michaelsoolee.com/love-vim-again/&quot;&gt;Falling in love with Vim again&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/michaelsoolee&quot;&gt;@michaelsoolee&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-</description>
-      
-      <pubDate>Mon, 19 Mar 2018 00:00:00 +0100</pubDate>
-      <link>http://shime.sh/loving-vim</link>
-      <guid isPermaLink="true">http://shime.sh/loving-vim</guid>
+      <link>http://deepdive.sh/deep-dive-into-minitest</link>
+      <guid isPermaLink="true">http://deepdive.sh/deep-dive-into-minitest</guid>
     </item>
     
   </channel>

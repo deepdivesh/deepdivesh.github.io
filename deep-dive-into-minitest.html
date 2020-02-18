@@ -11,8 +11,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/monokai.css?1582054946150592000">
-  <link rel="stylesheet" href="/public/css/style.css?1582054946150592000">
+  <link rel="stylesheet" href="/public/css/monokai.css?1582059024206594000">
+  <link rel="stylesheet" href="/public/css/style.css?1582059024206594000">
 
   <link rel="icon" sizes="16x16 32x32 64x64" href="/public/favicon.ico">
 <link rel="icon" type="image/png" sizes="196x196" href="/public/favicon-196.png">
@@ -46,27 +46,27 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Have you ever wondered what happens when you run a Minitest test suite? How does it work?" />
 <meta property="og:description" content="Have you ever wondered what happens when you run a Minitest test suite? How does it work?" />
-<link rel="canonical" href="http://shime.sh/deep-dive-into-minitest" />
-<meta property="og:url" content="http://shime.sh/deep-dive-into-minitest" />
-<meta property="og:site_name" content="Hrvoje Šimić" />
-<meta property="og:image" content="http://shime.sh/public/social.jpg" />
+<link rel="canonical" href="http://deepdive.sh/deep-dive-into-minitest" />
+<meta property="og:url" content="http://deepdive.sh/deep-dive-into-minitest" />
+<meta property="og:site_name" content="Deep Dive" />
+<meta property="og:image" content="http://deepdive.sh/public/social.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-06-23T00:00:00+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:image" content="http://shime.sh/public/social.jpg" />
+<meta property="twitter:image" content="http://deepdive.sh/public/social.jpg" />
 <meta property="twitter:title" content="Deep dive into Minitest" />
 <meta name="twitter:site" content="@shime_sh" />
 <meta name="twitter:creator" content="@shime_sh" />
 <script type="application/ld+json">
-{"headline":"Deep dive into Minitest","dateModified":"2019-06-23T00:00:00+02:00","url":"http://shime.sh/deep-dive-into-minitest","datePublished":"2019-06-23T00:00:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://shime.sh/deep-dive-into-minitest"},"image":"http://shime.sh/public/social.jpg","author":{"@type":"Person","name":"Hrvoje Šimić"},"description":"Have you ever wondered what happens when you run a Minitest test suite? How does it work?","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"dateModified":"2019-06-23T00:00:00+02:00","datePublished":"2019-06-23T00:00:00+02:00","url":"http://deepdive.sh/deep-dive-into-minitest","headline":"Deep dive into Minitest","mainEntityOfPage":{"@type":"WebPage","@id":"http://deepdive.sh/deep-dive-into-minitest"},"image":"http://deepdive.sh/public/social.jpg","author":{"@type":"Person","name":"Hrvoje Šimić"},"description":"Have you ever wondered what happens when you run a Minitest test suite? How does it work?","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
   
-    <title> Deep dive into Minitest &middot; Hrvoje Šimić </title>
+    <title> Deep dive into Minitest &middot; Deep Dive </title>
   
 
-  <meta name="title" content="Deep dive into Minitest &middot; Hrvoje Šimić">
+  <meta name="title" content="Deep dive into Minitest &middot; Deep Dive">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
 </head>
@@ -74,97 +74,8 @@
 
   <body class="font-sans">
     <div class="lg:pt-16 lg:pb-32 p-6 relative">
-      
-
-
-
-
-<div class="relative flex justify-between items-start w-full z-20 md:justify-center self-center">
-  <div class="flex items-center">
-    <a class="self-start w-16 h-16" href="/">
-      <img class="self-start rounded-full w-16 h-16" src='/public/shime.jpg' alt='' />
-    </a>
-
-    <div class="flex flex-col ml-4">
-      <a class="text-black font-bold text-xl no-underline font-extrabold self-start" href="/">Hrvoje Šimić</a>
-      <a class="text-black font-bold no-underline font-extrabold my-1 self-start" href="https://twitter.com/shime_sh">@shime_sh</a>
-      <ul class="hidden md:block list-reset tracking-wide">
-        
-        <li class="inline">
-          
-            <a class="font-medium text-xs text-grey no-underline uppercase mr-2 hover:text-blue-light" href='/articles/'>Articles</a>
-          
-        </li>
-        
-        <li class="inline">
-          
-            <a class="font-medium text-xs text-grey no-underline uppercase mr-2 hover:text-blue-light" href='/til/'>TIL</a>
-          
-        </li>
-        
-        <li class="inline">
-          
-            <a class="font-medium text-xs text-grey no-underline uppercase mr-2 hover:text-blue-light" href='/photography/'>Photography</a>
-          
-        </li>
-        
-        <li class="inline">
-          
-            <a class="font-medium text-xs text-grey no-underline uppercase mr-2 hover:text-blue-light" href='/reading/'>Reading list</a>
-          
-        </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  <div class="block md:hidden self-center">
-    <button data-open-hamburger-menu="true">
-      <svg height="32" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path fill="black" class="heroicon-ui" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
-      </svg>
-    </button>
-
-    <button data-close-hamburger-menu="true" class="hidden">
-      <svg fill="black" height="32" id="close" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 8 L8 4 L16 12 L24 4 L28 8 L20 16 L28 24 L24 28 L16 20 L8 28 L4 24 L12 16 z"/>
-      </svg>
-    </button>
-  </div>
-</div>
-
-<div class="hidden md:hidden fixed pin bg-white z-10 mt-32 pt-12" data-hamburger-menu="true">
-  <ul class="list-reset tracking-wide flex flex-col items-center w-full">
-    
-
-    <li class="my-2">
-      
-        <a class="font-semibold text-xl text-black no-underline uppercase" href='/articles/'>Articles</a>
-      
-    </li>
-    
-
-    <li class="my-2">
-      
-        <a class="font-semibold text-xl text-black no-underline uppercase" href='/til/'>TIL</a>
-      
-    </li>
-    
-
-    <li class="my-2">
-      
-        <a class="font-semibold text-xl text-black no-underline uppercase" href='/photography/'>Photography</a>
-      
-    </li>
-    
-
-    <li class="my-2">
-      
-        <a class="font-semibold text-xl text-black no-underline uppercase" href='/reading/'>Reading list</a>
-      
-    </li>
-    
-  </ul>
+      <div class="relative flex justify-between items-start w-full z-20 md:justify-center self-center">
+  <img src="/public/deep_dive.png" class="max-w-sm" />
 </div>
 
 
@@ -174,7 +85,7 @@
           
 
           <div>
-            <a class="no-underline uppercase text-sm" href="/articles"> ← articles </a>
+            <a class="no-underline uppercase text-sm" href="/"> ← articles </a>
           </div>
           <div class="mb-8">
             <h1>Deep dive into Minitest</h1>
@@ -1209,24 +1120,56 @@ if you raise an exception.</p></li>
 
           <hr />
 
+          <div class="mt-12 mb-16">
+            <div class="relative flex justify-between items-start w-full z-20 self-center">
+  <div class="flex items-start">
+    <a class="self-start w-16 h-16" href="/">
+      <img class="self-start rounded-full w-16 h-16" src='/public/shime.jpg' alt='' />
+    </a>
+
+    <div class="flex flex-col ml-4">
+      <a class=" font-bold text-xl no-underline font-extrabold self-start" href="/">Hrvoje Šimić</a>
+      <a class=" font-bold no-underline font-extrabold my-1 self-start" href="https://twitter.com/shime_sh">@shime_sh</a>
+      <ul class="hidden md:block list-reset tracking-wide">
+      </ul>
+    </div>
+  </div>
+
+  <div class="block md:hidden self-center">
+    <button data-open-hamburger-menu="true">
+      <svg height="32" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path fill="" class="heroicon-ui" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+      </svg>
+    </button>
+
+    <button data-close-hamburger-menu="true" class="hidden">
+      <svg fill="" height="32" id="close" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 8 L8 4 L16 12 L24 4 L28 8 L20 16 L28 24 L24 28 L16 20 L8 28 L4 24 L12 16 z"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+          </div>
+
           <p class="mt-4">
-            Did you like this article?  You can <a href="https://twitter.com/shime_sh">follow me on Twitter</a>, subscribe to my newsletter or <a  href="/feed.xml">subscribe to the RSS feed</a> if you'd like to follow along.
+            Did you like this article? You can <a href="https://twitter.com/shime_sh">follow me on Twitter</a>, subscribe to the newsletter or <a  href="/feed.xml">subscribe to the RSS feed</a> if you'd like to follow along.
 
             <div class="mt-2">
               <form
-  action="https://buttondown.email/api/emails/embed-subscribe/shime"
+  action="https://buttondown.email/api/emails/embed-subscribe/twobucks"
   method="post"
   target="popupwindow"
-  onsubmit="window.open('https://buttondown.email/shime', 'popupwindow')"
+  onsubmit="window.open('https://buttondown.email/twobucks', 'popupwindow')"
   class="embeddable-buttondown-form"
-  >
+>
   <div class="flex max-w-sm m-auto">
     <input type="email" name="email" id="bd-email" class="bg-grey-lighter appearance-none rounded rounded-r-none w-full py-2 px-4 text-grey-darker leading-tight focus:outline-none"  placeholder="Enter your best email address">
     <input type="hidden" value="1" name="embed"></input>
     
     <input type="hidden" name="tag" value="articles" />
     
-    <input type="submit" value="Subscribe" class="cursor-pointer shadow bg-blue-light hover:bg-blue-lighter focus:outline-none text-white font-bold py-2 px-4 rounded rounded-l-none"></input>
+    <input type="submit" value="Subscribe" class="cursor-pointer shadow bg-black hover:bg-grey-darkest focus:outline-none text-white font-bold py-2 px-4 rounded rounded-l-none"></input>
   </div>
 </form>
 
