@@ -11,8 +11,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/monokai.css?1582616879494213000">
-  <link rel="stylesheet" href="/public/css/style.css?1582616879494213000">
+  <link rel="stylesheet" href="/public/css/monokai.css?1582618895696445000">
+  <link rel="stylesheet" href="/public/css/style.css?1582618895696445000">
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
@@ -395,7 +395,7 @@ Why do we need it here? Couldn&#39;t we simply write:</p>
 
 <h2>Going deeper</h2>
 
-<p>This leads us to <code>Rack::Builder#run</code>, which is being called in our <code>config.ru</code> script:</p>
+<p>Calling <code>run</code> in our <code>config.ru</code> script, means that our journey continues to <code>Rack::Builder#run</code>:</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="c1"># Takes an argument that is an object that responds to #call and returns a Rack response.</span>
 <span class="c1"># The simplest form of this is a lambda object:</span>
@@ -415,7 +415,7 @@ Why do we need it here? Couldn&#39;t we simply write:</p>
   <span class="vi">@run</span> <span class="o">=</span> <span class="n">app</span>
 <span class="k">end</span></code></pre></figure>
 
-<p>Since there are no other method calls to follow, it looks like we&#39;ve come to the bottom of this. Let&#39;s continue looking at branches that we&#39;ve ignored previously.</p>
+<p>Since there are no other method calls to follow, it looks like we&#39;ve come the end. Let&#39;s continue looking at branches that we&#39;ve ignored previously.</p>
 
 <p>The last thing we ignored was <code>build_app</code> in <code>wrapped_app</code><sup>[<a href="#wrapped_app">&nearr;</a>]</sup>:</p>
 
