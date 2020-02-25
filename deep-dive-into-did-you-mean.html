@@ -11,8 +11,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/monokai.css?1582197185354881000">
-  <link rel="stylesheet" href="/public/css/style.css?1582197185354881000">
+  <link rel="stylesheet" href="/public/css/monokai.css?1582616419676747000">
+  <link rel="stylesheet" href="/public/css/style.css?1582616419676747000">
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
@@ -22,8 +22,8 @@
 <meta property="og:title" content="Deep dive into Did You Mean" />
 <meta name="author" content="Hrvoje Šimić" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Since version 2.3.0, Ruby comes bundled with did_you_mean, a handy gem for detecting typos." />
-<meta property="og:description" content="Since version 2.3.0, Ruby comes bundled with did_you_mean, a handy gem for detecting typos." />
+<meta name="description" content="License (MIT) (The MIT License) Copyright (c) 2014-2016 Yuki Nishijima" />
+<meta property="og:description" content="License (MIT) (The MIT License) Copyright (c) 2014-2016 Yuki Nishijima" />
 <link rel="canonical" href="https://deepdive.sh/deep-dive-into-did-you-mean" />
 <meta property="og:url" content="https://deepdive.sh/deep-dive-into-did-you-mean" />
 <meta property="og:site_name" content="Deep Dive" />
@@ -36,7 +36,7 @@
 <meta name="twitter:site" content="@shime_sh" />
 <meta name="twitter:creator" content="@shime_sh" />
 <script type="application/ld+json">
-{"dateModified":"2019-12-28T00:00:00+01:00","datePublished":"2019-12-28T00:00:00+01:00","url":"https://deepdive.sh/deep-dive-into-did-you-mean","headline":"Deep dive into Did You Mean","mainEntityOfPage":{"@type":"WebPage","@id":"https://deepdive.sh/deep-dive-into-did-you-mean"},"image":"https://deepdive.sh/public/social3.jpg","author":{"@type":"Person","name":"Hrvoje Šimić"},"description":"Since version 2.3.0, Ruby comes bundled with did_you_mean, a handy gem for detecting typos.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"dateModified":"2019-12-28T00:00:00+01:00","datePublished":"2019-12-28T00:00:00+01:00","url":"https://deepdive.sh/deep-dive-into-did-you-mean","headline":"Deep dive into Did You Mean","mainEntityOfPage":{"@type":"WebPage","@id":"https://deepdive.sh/deep-dive-into-did-you-mean"},"image":"https://deepdive.sh/public/social3.jpg","author":{"@type":"Person","name":"Hrvoje Šimić"},"description":"License (MIT) (The MIT License) Copyright (c) 2014-2016 Yuki Nishijima","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -83,14 +83,38 @@
                   ruby
                 </span>
               
-                <span class="bg-blue-lightest py-1 px-2 text-center text-blue-dark mr-2 rounded text-sm">
-                  deep dive
-                </span>
-              
             </div>
           </div>
 
-          <p>Since version 2.3.0, Ruby comes bundled
+          <details><summary>License (MIT)</summary>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span></span><span class="o">(</span>The MIT License<span class="o">)</span>
+Copyright <span class="o">(</span>c<span class="o">)</span> <span class="m">2014</span>-2016 Yuki Nishijima
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files <span class="o">(</span>the
+<span class="s2">&quot;Software&quot;</span><span class="o">)</span>, to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to <span class="k">do</span> so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED <span class="s2">&quot;AS IS&quot;</span>, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</code></pre></figure>
+
+</details>
+
+<p>Since version 2.3.0, Ruby comes bundled
 with <a href="https://github.com/ruby/did_you_mean">did_you_mean</a>,
 a handy gem for detecting typos.</p>
 
@@ -164,7 +188,7 @@ somewhere:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/ruby/did_you_mean/blob/8175f6eefb9c55a8906fc8bce2dd3b7c03de3e59/lib/did_you_mean/core_ext/name_error.rb'>
-            lib/did_you_mean/core_ext/name_error.rb
+            lib/did_you_mean/core_ext/name_error.rb &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="k">module</span> <span class="nn">DidYouMean</span>
   <span class="k">module</span> <span class="nn">Correctable</span>
@@ -196,7 +220,7 @@ somewhere:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/ruby/did_you_mean/blob/8175f6eefb9c55a8906fc8bce2dd3b7c03de3e59/lib/did_you_mean/core_ext/name_error.rb'>
-            lib/did_you_mean/core_ext/name_error.rb
+            lib/did_you_mean/core_ext/name_error.rb &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="k">module</span> <span class="nn">DidYouMean</span>
   <span class="k">module</span> <span class="nn">Correctable</span>
@@ -228,7 +252,7 @@ somewhere:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/ruby/did_you_mean/blob/8175f6eefb9c55a8906fc8bce2dd3b7c03de3e59/lib/did_you_mean.rb#L85-L110'>
-            lib/did_you_mean.rb#L85-L110
+            lib/did_you_mean.rb#L85-L110 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="k">module</span> <span class="nn">DidYouMean</span>
 <span class="hll">  <span class="c1"># Map of error types and spell checker objects.</span>
@@ -278,7 +302,7 @@ use <code>MethodNameChecker</code> for this.</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/ruby/did_you_mean/blob/8175f6eefb9c55a8906fc8bce2dd3b7c03de3e59/lib/did_you_mean/core_ext/name_error.rb'>
-            lib/did_you_mean/core_ext/name_error.rb
+            lib/did_you_mean/core_ext/name_error.rb &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="k">module</span> <span class="nn">DidYouMean</span>
   <span class="k">module</span> <span class="nn">Correctable</span>
@@ -310,7 +334,7 @@ use <code>MethodNameChecker</code> for this.</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/ruby/did_you_mean/blob/8175f6eefb9c55a8906fc8bce2dd3b7c03de3e59/lib/did_you_mean/spell_checkers/method_name_checker.rb'>
-            lib/did_you_mean/spell_checkers/method_name_checker.rb
+            lib/did_you_mean/spell_checkers/method_name_checker.rb &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="n">require_relative</span> <span class="s2">&quot;../spell_checker&quot;</span>
 
@@ -375,7 +399,7 @@ are collected elegantly by combining <code>Object#methods</code> and <code>Objec
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/ruby/did_you_mean/blob/8175f6eefb9c55a8906fc8bce2dd3b7c03de3e59/lib/did_you_mean/spell_checkers/method_name_checker.rb'>
-            lib/did_you_mean/spell_checkers/method_name_checker.rb
+            lib/did_you_mean/spell_checkers/method_name_checker.rb &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="n">require_relative</span> <span class="s2">&quot;../spell_checker&quot;</span>
 
@@ -441,7 +465,7 @@ words and all of the methods from the receiver, or the object that raised the ex
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/yuki24/did_you_mean/blob/8175f6eefb9c55a8906fc8bce2dd3b7c03de3e59/lib/did_you_mean/spell_checker.rb'>
-            lib/did_you_mean/spell_checker.rb
+            lib/did_you_mean/spell_checker.rb &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="n">require_relative</span> <span class="s2">&quot;levenshtein&quot;</span>
 <span class="n">require_relative</span> <span class="s2">&quot;jaro_winkler&quot;</span>
@@ -661,7 +685,7 @@ to improve its accuracy:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/ruby/did_you_mean/blob/8175f6eefb9c55a8906fc8bce2dd3b7c03de3e59/lib/did_you_mean/core_ext/name_error.rb#L9'>
-            lib/did_you_mean/core_ext/name_error.rb#L9
+            lib/did_you_mean/core_ext/name_error.rb#L9 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="k">module</span> <span class="nn">DidYouMean</span>
   <span class="k">module</span> <span class="nn">Correctable</span>
@@ -693,7 +717,7 @@ to improve its accuracy:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/ruby/did_you_mean/blob/8175f6eefb9c55a8906fc8bce2dd3b7c03de3e59/lib/did_you_mean.rb#L85-L110'>
-            lib/did_you_mean.rb#L85-L110
+            lib/did_you_mean.rb#L85-L110 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="k">module</span> <span class="nn">DidYouMean</span>
   <span class="c1"># Map of error types and spell checker objects.</span>
@@ -726,7 +750,7 @@ to improve its accuracy:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/yuki24/did_you_mean/blob/8175f6eefb9c55a8906fc8bce2dd3b7c03de3e59/lib/did_you_mean/formatters/plain_formatter.rb'>
-            lib/did_you_mean/formatters/plain_formatter.rb
+            lib/did_you_mean/formatters/plain_formatter.rb &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="c1"># frozen-string-literal: true</span>
 
@@ -785,7 +809,7 @@ and it comes with Rails integration.</p>
     </a>
 
     <div class="flex flex-col ml-4">
-      <a class=" font-bold text-xl no-underline font-extrabold self-start" href="/">Hrvoje Šimić</a>
+      <a class=" font-bold text-xl no-underline font-extrabold self-start" href="https://twitter.com/shime_sh">Hrvoje Šimić</a>
       <a class=" font-bold no-underline font-extrabold my-1 self-start" href="https://twitter.com/shime_sh">@shime_sh</a>
       <ul class="hidden md:block list-reset tracking-wide">
       </ul>

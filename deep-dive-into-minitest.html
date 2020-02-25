@@ -11,8 +11,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/monokai.css?1582197185354881000">
-  <link rel="stylesheet" href="/public/css/style.css?1582197185354881000">
+  <link rel="stylesheet" href="/public/css/monokai.css?1582616419676747000">
+  <link rel="stylesheet" href="/public/css/style.css?1582616419676747000">
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
@@ -22,8 +22,8 @@
 <meta property="og:title" content="Deep dive into Minitest" />
 <meta name="author" content="Hrvoje Šimić" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Have you ever wondered what happens when you run a Minitest test suite? How does it work?" />
-<meta property="og:description" content="Have you ever wondered what happens when you run a Minitest test suite? How does it work?" />
+<meta name="description" content="License (MIT) (The MIT License)" />
+<meta property="og:description" content="License (MIT) (The MIT License)" />
 <link rel="canonical" href="https://deepdive.sh/deep-dive-into-minitest" />
 <meta property="og:url" content="https://deepdive.sh/deep-dive-into-minitest" />
 <meta property="og:site_name" content="Deep Dive" />
@@ -36,7 +36,7 @@
 <meta name="twitter:site" content="@shime_sh" />
 <meta name="twitter:creator" content="@shime_sh" />
 <script type="application/ld+json">
-{"dateModified":"2019-06-23T00:00:00+02:00","datePublished":"2019-06-23T00:00:00+02:00","url":"https://deepdive.sh/deep-dive-into-minitest","headline":"Deep dive into Minitest","mainEntityOfPage":{"@type":"WebPage","@id":"https://deepdive.sh/deep-dive-into-minitest"},"image":"https://deepdive.sh/public/social3.jpg","author":{"@type":"Person","name":"Hrvoje Šimić"},"description":"Have you ever wondered what happens when you run a Minitest test suite? How does it work?","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"dateModified":"2019-06-23T00:00:00+02:00","datePublished":"2019-06-23T00:00:00+02:00","url":"https://deepdive.sh/deep-dive-into-minitest","headline":"Deep dive into Minitest","mainEntityOfPage":{"@type":"WebPage","@id":"https://deepdive.sh/deep-dive-into-minitest"},"image":"https://deepdive.sh/public/social3.jpg","author":{"@type":"Person","name":"Hrvoje Šimić"},"description":"License (MIT) (The MIT License)","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -83,14 +83,24 @@
                   ruby
                 </span>
               
-                <span class="bg-blue-lightest py-1 px-2 text-center text-blue-dark mr-2 rounded text-sm">
-                  deep dive
-                </span>
-              
             </div>
           </div>
 
-          <p>Have you ever wondered what happens when you run a Minitest test suite? How does it work?</p>
+          <details><summary>License (MIT)</summary>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span></span><span class="o">(</span>The MIT License<span class="o">)</span>
+
+Copyright © Ryan Davis, seattle.rb
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files <span class="o">(</span>the <span class="s1">&#39;Software&#39;</span><span class="o">)</span>, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to <span class="k">do</span> so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED <span class="s1">&#39;AS IS&#39;</span>, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</code></pre></figure>
+
+</details>
+
+<p>Have you ever wondered what happens when you run a Minitest test suite? How does it work?</p>
 
 <p>This article will demystify Minitest&#39;s magic by going deep into its source code. After reading
 it, you&#39;ll no longer consider Minitest a magical black box and will understand how Minitest
@@ -433,7 +443,7 @@ Let&#39;s confirm it:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L52-L66'>
-            lib/minitest.rb#L52-L66
+            lib/minitest.rb#L52-L66 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="hll"><span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">autorun</span>
 </span><span class="hll">  <span class="nb">at_exit</span> <span class="p">{</span>
@@ -464,7 +474,7 @@ multiple test files each requiring <code>minitest/autorun</code>).</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L52-L66'>
-            lib/minitest.rb#L52-L66
+            lib/minitest.rb#L52-L66 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">autorun</span>
   <span class="nb">at_exit</span> <span class="p">{</span>
@@ -494,7 +504,7 @@ when the program is exiting.</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L10-L15'>
-            lib/minitest.rb#L10-L15
+            lib/minitest.rb#L10-L15 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="k">module</span> <span class="nn">Minitest</span>
   <span class="no">VERSION</span> <span class="o">=</span> <span class="s2">&quot;5.11.3&quot;</span> <span class="c1"># :nodoc:</span>
@@ -508,7 +518,7 @@ when the program is exiting.</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L68-L76'>
-            lib/minitest.rb#L68-L76
+            lib/minitest.rb#L68-L76 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="c1">##</span>
 <span class="c1"># A simple hook allowing you to run a block of code after everything</span>
@@ -528,7 +538,7 @@ to deploy its magic, let&#39;s take a look at the one thing that&#39;s left:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L52-L66'>
-            lib/minitest.rb#L52-L66
+            lib/minitest.rb#L52-L66 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">autorun</span>
   <span class="nb">at_exit</span> <span class="p">{</span>
@@ -554,7 +564,7 @@ to deploy its magic, let&#39;s take a look at the one thing that&#39;s left:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L103-L144'>
-            lib/minitest.rb#L103-L144
+            lib/minitest.rb#L103-L144 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="hll"><span class="c1">##</span>
 </span><span class="hll"><span class="c1"># This is the top-level run method. Everything starts from here. It</span>
@@ -602,7 +612,7 @@ to deploy its magic, let&#39;s take a look at the one thing that&#39;s left:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L146-L161'>
-            lib/minitest.rb#L146-L161
+            lib/minitest.rb#L146-L161 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="c1">##</span>
 <span class="c1"># Internal run method. Responsible for telling all Runnable</span>
@@ -625,7 +635,7 @@ It looks like it&#39;s an array, but where did it come from?</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L373-L378'>
-            lib/minitest.rb#L373-L378
+            lib/minitest.rb#L373-L378 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="c1">##</span>
 <span class="c1"># Returns all subclasses of Runnable.</span>
@@ -638,7 +648,7 @@ It looks like it&#39;s an array, but where did it come from?</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L977-L982'>
-            lib/minitest.rb#L977-L982
+            lib/minitest.rb#L977-L982 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="k">class</span> <span class="nc">Runnable</span> <span class="c1"># re-open</span>
   <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">inherited</span> <span class="n">klass</span> <span class="c1"># :nodoc:</span>
@@ -653,7 +663,7 @@ appended to, but not assigned to an array yet. Here&#39;s the missing piece:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L291-L295'>
-            lib/minitest.rb#L291-L295
+            lib/minitest.rb#L291-L295 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">reset</span> <span class="c1"># :nodoc:</span>
   <span class="vc">@@runnables</span> <span class="o">=</span> <span class="o">[]</span>
@@ -668,7 +678,7 @@ appended to, but not assigned to an array yet. Here&#39;s the missing piece:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L496'>
-            lib/minitest.rb#L496
+            lib/minitest.rb#L496 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="k">class</span> <span class="nc">Result</span> <span class="o">&lt;</span> <span class="no">Runnable</span></code></pre></figure>
 
@@ -676,7 +686,7 @@ appended to, but not assigned to an array yet. Here&#39;s the missing piece:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L146-L161'>
-            lib/minitest.rb#L146-L161
+            lib/minitest.rb#L146-L161 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="c1">##</span>
 <span class="c1"># Internal run method. Responsible for telling all Runnable</span>
@@ -700,7 +710,7 @@ empty <code>runnable_methods</code>.</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L365-L371'>
-            lib/minitest.rb#L365-L371
+            lib/minitest.rb#L365-L371 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="c1">##</span>
 <span class="c1"># Each subclass of Runnable is responsible for overriding this</span>
@@ -747,7 +757,7 @@ while <code>Result &lt; Runnable</code> happens on line <a href="https://github.
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest/test.rb#L10'>
-            lib/minitest/test.rb#L10
+            lib/minitest/test.rb#L10 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><span></span>  <span class="k">class</span> <span class="nc">Test</span> <span class="o">&lt;</span> <span class="no">Runnable</span></code></pre></figure>
 
@@ -755,7 +765,7 @@ while <code>Result &lt; Runnable</code> happens on line <a href="https://github.
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L987'>
-            lib/minitest.rb#L987
+            lib/minitest.rb#L987 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="nb">require</span> <span class="s2">&quot;minitest/test&quot;</span></code></pre></figure>
 
@@ -766,7 +776,7 @@ we can happily declare that <code>Runnable.runnables</code> contains <code>[Test
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest/test.rb#L60-L77'>
-            lib/minitest/test.rb#L60-L77
+            lib/minitest/test.rb#L60-L77 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="c1">##</span>
 <span class="c1"># Returns all instance methods starting with &quot;test_&quot;. Based on</span>
@@ -792,7 +802,7 @@ using the <code>Runnable#methods_matching</code>:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L284-L289'>
-            lib/minitest.rb#L284-L289
+            lib/minitest.rb#L284-L289 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="c1">##</span>
 <span class="c1"># Returns all instance methods matching the pattern +re+.</span>
@@ -805,7 +815,7 @@ using the <code>Runnable#methods_matching</code>:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L146-L161'>
-            lib/minitest.rb#L146-L161
+            lib/minitest.rb#L146-L161 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="c1">##</span>
 <span class="c1"># Internal run method. Responsible for telling all Runnable</span>
@@ -825,7 +835,7 @@ using the <code>Runnable#methods_matching</code>:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest/test.rb#L79-L85'>
-            lib/minitest/test.rb#L79-L85
+            lib/minitest/test.rb#L79-L85 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="c1">##</span>
 <span class="c1"># Defines the order to run tests (:random by default). Override</span>
@@ -839,7 +849,7 @@ using the <code>Runnable#methods_matching</code>:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L146-L161'>
-            lib/minitest.rb#L146-L161
+            lib/minitest.rb#L146-L161 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="c1">##</span>
 <span class="c1"># Internal run method. Responsible for telling all Runnable</span>
@@ -859,7 +869,7 @@ using the <code>Runnable#methods_matching</code>:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L297-L324'>
-            lib/minitest.rb#L297-L324
+            lib/minitest.rb#L297-L324 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="hll"><span class="c1">##</span>
 </span><span class="hll"><span class="c1"># Responsible for running all runnable methods in a given class,</span>
@@ -896,7 +906,7 @@ provided from the command line. Let&#39;s get to the juicy part:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L319-L323'>
-            lib/minitest.rb#L319-L323
+            lib/minitest.rb#L319-L323 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="c1">##</span>
 <span class="c1"># Responsible for running all runnable methods in a given class,</span>
@@ -931,7 +941,7 @@ provided from the command line. Let&#39;s get to the juicy part:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L326-L335'>
-            lib/minitest.rb#L326-L335
+            lib/minitest.rb#L326-L335 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="c1">##</span>
 <span class="c1"># Runs a single method and has the reporter record the result.</span>
@@ -948,7 +958,7 @@ provided from the command line. Let&#39;s get to the juicy part:</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L959-L963'>
-            lib/minitest.rb#L959-L963
+            lib/minitest.rb#L959-L963 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">run_one_method</span> <span class="n">klass</span><span class="p">,</span> <span class="n">method_name</span> <span class="c1"># :nodoc:</span>
   <span class="n">result</span> <span class="o">=</span> <span class="n">klass</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">method_name</span><span class="p">)</span><span class="o">.</span><span class="n">run</span>
@@ -965,7 +975,7 @@ in the entire project.</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L960'>
-            lib/minitest.rb#L960
+            lib/minitest.rb#L960 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">run_one_method</span> <span class="n">klass</span><span class="p">,</span> <span class="n">method_name</span> <span class="c1"># :nodoc:</span>
 <span class="hll">  <span class="n">result</span> <span class="o">=</span> <span class="n">klass</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">method_name</span><span class="p">)</span><span class="o">.</span><span class="n">run</span>
@@ -977,7 +987,7 @@ in the entire project.</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest.rb#L400-L404'>
-            lib/minitest.rb#L400-L404
+            lib/minitest.rb#L400-L404 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="k">def</span> <span class="nf">initialize</span> <span class="nb">name</span> <span class="c1"># :nodoc:</span>
   <span class="nb">self</span><span class="o">.</span><span class="n">name</span>       <span class="o">=</span> <span class="nb">name</span>
@@ -996,7 +1006,7 @@ in the entire project.</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest/test.rb#L89-L110'>
-            lib/minitest/test.rb#L89-L110
+            lib/minitest/test.rb#L89-L110 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="c1">##</span>
 <span class="c1"># Runs a single test with setup/teardown hooks.</span>
@@ -1025,7 +1035,7 @@ in the entire project.</p>
 
 <figure class="highlight"><div class='source-location'>
           <a href='https://github.com/seattlerb/minitest/blob/1f2b1328f286967926a381d7a34e0eadead0722d/lib/minitest/test.rb#L98'>
-            lib/minitest/test.rb#L98
+            lib/minitest/test.rb#L98 &nearr;
           </a>
         </div><pre><code class="language-ruby" data-lang="ruby"><div class="emphasized"><pre><span></span><span class="c1">##</span>
 <span class="c1"># Runs a single test with setup/teardown hooks.</span>
@@ -1110,7 +1120,7 @@ if you raise an exception.</p></li>
     </a>
 
     <div class="flex flex-col ml-4">
-      <a class=" font-bold text-xl no-underline font-extrabold self-start" href="/">Hrvoje Šimić</a>
+      <a class=" font-bold text-xl no-underline font-extrabold self-start" href="https://twitter.com/shime_sh">Hrvoje Šimić</a>
       <a class=" font-bold no-underline font-extrabold my-1 self-start" href="https://twitter.com/shime_sh">@shime_sh</a>
       <ul class="hidden md:block list-reset tracking-wide">
       </ul>

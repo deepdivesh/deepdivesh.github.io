@@ -8,11 +8,25 @@
 
     
     <item>
+      <title>Deep dive into rackup</title>
+      
+      <description>&lt;p&gt;&lt;details&gt;&lt;summary&gt;License (MIT)&lt;/summary&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;&lt;/span&gt;The MIT License &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;MIT&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+</description>
+      
+      <pubDate>Tue, 25 Feb 2020 00:00:00 +0100</pubDate>
+      <link>https://deepdive.sh/deep-dive-into-rackup</link>
+      <guid isPermaLink="true">https://deepdive.sh/deep-dive-into-rackup</guid>
+    </item>
+    
+    <item>
       <title>Deep dive into Did You Mean</title>
       
-      <description>&lt;p&gt;Since version 2.3.0, Ruby comes bundled
-with &lt;a href=&quot;https://github.com/ruby/did_you_mean&quot;&gt;did_you_mean&lt;/a&gt;,
-a handy gem for detecting typos.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;details&gt;&lt;summary&gt;License (MIT)&lt;/summary&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;The MIT License&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Copyright &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2014&lt;/span&gt;-2016 Yuki Nishijima&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 </description>
       
       <pubDate>Sat, 28 Dec 2019 00:00:00 +0100</pubDate>
@@ -23,7 +37,9 @@ a handy gem for detecting typos.&lt;/p&gt;
     <item>
       <title>Deep dive into Minitest</title>
       
-      <description>&lt;p&gt;Have you ever wondered what happens when you run a Minitest test suite? How does it work?&lt;/p&gt;
+      <description>&lt;p&gt;&lt;details&gt;&lt;summary&gt;License (MIT)&lt;/summary&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;The MIT License&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 </description>
       
       <pubDate>Sun, 23 Jun 2019 00:00:00 +0200</pubDate>
