@@ -7,7 +7,7 @@
   
     <url>
       <loc>https://deepdive.sh/feed.xml</loc>
-      <lastmod>2020-04-17</lastmod>
+      <lastmod>2020-10-01</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>
@@ -16,7 +16,7 @@
   
     <url>
       <loc>https://deepdive.sh/privacy/</loc>
-      <lastmod>2020-04-17</lastmod>
+      <lastmod>2020-10-01</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>
@@ -25,7 +25,7 @@
   
     <url>
       <loc>https://deepdive.sh/</loc>
-      <lastmod>2020-04-17</lastmod>
+      <lastmod>2020-10-01</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>
@@ -34,7 +34,7 @@
   
     <url>
       <loc>https://deepdive.sh/sitemap.xml</loc>
-      <lastmod>2020-04-17</lastmod>
+      <lastmod>2020-10-01</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>
@@ -43,7 +43,7 @@
   
     <url>
       <loc>https://deepdive.sh/public/css/style.css</loc>
-      <lastmod>2020-04-17</lastmod>
+      <lastmod>2020-10-01</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>
@@ -56,21 +56,21 @@
   
   <url>
     <loc>https://deepdive.sh/deep-dive-into-rackup</loc>
-    <lastmod>2020-04-17</lastmod>
+    <lastmod>2020-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://deepdive.sh/deep-dive-into-did-you-mean</loc>
-    <lastmod>2020-04-17</lastmod>
+    <lastmod>2020-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://deepdive.sh/deep-dive-into-minitest</loc>
-    <lastmod>2020-04-17</lastmod>
+    <lastmod>2020-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
